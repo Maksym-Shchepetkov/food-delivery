@@ -3,45 +3,113 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <title>Food Delivery</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Kalam&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
-    <header>
-      <a href=""
-        ><img src="./images/Vector.svg" alt="logo" width="66" height="52"
-      /></a>
-      <nav>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Service</a></li>
-          <li><a href="">Menu</a></li>
-          <li><a href="">Contact</a></li>
+    <header class="header">
+      <div class="container">
+        <a href="./index.html" class="header-logo-link"
+          ><svg class="header-logo-svg" width="66" height="52">
+            <use href="./images/icons.svg#icon-logo"></use></svg
+        ></a>
+
+        <button type="button" class="header-menu-btn">
+          <svg class="header-menu" width="28" height="28">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+
+        <nav class="header-nav">
+          <ul class="header-list">
+            <li class="header-items">
+              <a href="" class="header-links first">Home</a>
+            </li>
+            <li class="header-items">
+              <a href="" class="header-links">About</a>
+            </li>
+            <li class="header-items">
+              <a href="" class="header-links">Service</a>
+            </li>
+            <li class="header-items">
+              <a href="" class="header-links">Menu</a>
+            </li>
+            <li class="header-items">
+              <a href="" class="header-links">Contact</a>
+            </li>
+          </ul>
+
+          <button type="button" class="header-button">Order Now</button>
+        </nav>
+      </div>
+
+      <div class="mob-menu">
+        <button type="button" class="mob-close-btn">
+          <svg class="mob-btn-svg" width="12" height="12">
+            <use href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <ul class="header-list">
+          <li class="header-items">
+            <a href="" class="header-links main">Home</a>
+          </li>
+          <li class="header-items">
+            <a href="" class="header-links">About</a>
+          </li>
+          <li class="header-items">
+            <a href="" class="header-links">Service</a>
+          </li>
+          <li class="header-items">
+            <a href="" class="header-links">Menu</a>
+          </li>
+          <li class="header-items">
+            <a href="" class="header-links">Contact</a>
+          </li>
         </ul>
-      </nav>
-      <button type="button">Order Now</button>
+      </div>
     </header>
+
     <main>
-      <section>
-        <h1>Enjoy Your Favorite Food From Anywhere</h1>
-        <p>
-          With just a few clicks, you can have your favorite meals delivered
-          straight to your doorstep, no matter where you are. Order now and
-          enjoy a hassle-free and delicious meal from the comfort of your own
-          home.
-        </p>
-        <button type="button">Order Now</button>
-        <img
-          src="./images/pngwing.com - 2022-08-04T071142-min.png"
-          alt="salad"
-          width="528"
-          height="528"
-        />
+      <section class="hero">
+        <div class="hero-container">
+          <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
+          <p class="hero-par">
+            With just a few clicks, you can have your favorite meals delivered
+            straight to your doorstep, no matter where you are. Order now and
+            enjoy a hassle-free and delicious meal from the comfort of your own
+            home.
+          </p>
+          <button type="button" class="hero-btn">Order Now</button>
+
+          <img
+            src="./images/Foto-mob.png"
+            alt="nachoz"
+            width="292"
+            height="292"
+            class="hero-img"
+          />
+          <img
+            src="./images/salad.png"
+            alt="salad"
+            width="528"
+            height="528"
+            class="hero-img-desk"
+          />
+        </div>
       </section>
 
-      <section>
-        <h2>What’s Special About Our Offerings</h2>
+      <!-- <section>
+        <h2>What's Special About Our Offerings</h2>
         <p>
           With our platform, you can browse through a diverse selection of
           cuisines and local restaurants, and choose from a variety of dishes
@@ -66,9 +134,9 @@
         </ul>
         <button type="button">Order Now</button>
         <img src="./images/aple-min.png" alt="apple" width="396" height="502" />
-      </section>
+      </section> -->
 
-      <section>
+      <!-- <section>
         <h2>Some of Our Favorites</h2>
         <p>Looking for something delicious?</p>
         <ul>
@@ -121,9 +189,9 @@
             />
           </li>
         </ul>
-      </section>
+      </section> -->
 
-      <section>
+      <!-- <section>
         <h2>What our Customers Say</h2>
         <p>
           Don't just take our word for it - see what our satisfied customers
@@ -151,9 +219,9 @@
             <p>Some Dude</p>
           </li>
         </ul>
-      </section>
+      </section> -->
 
-      <section>
+      <!-- <section>
         <h2>Subscribe To Get Special Offers</h2>
         <p>
           Order now and receive 10% off your first meal with Enjoy Your Favorite
@@ -166,10 +234,10 @@
           width="608"
           height="266"
         />
-      </section>
+      </section> -->
     </main>
 
-    <footer>
+    <!-- <footer>
       <a href=""
         ><img src="./images/Vector.svg" alt="lower logo" width="66" height="52"
       /></a>
@@ -189,6 +257,13 @@
         <li><a href="">Terms of Service</a></li>
         <li><a href="">Cookies Settings</a></li>
       </ul>
-    </footer>
+    </footer> -->
+
+    <!-- <div class="backdrop">
+      <div class="modal">
+        <p class="modal-title">Order Form</p>
+        <button class="modal-close-btn" type="button">Send</button>
+      </div>
+    </div> -->
   </body>
 </html>

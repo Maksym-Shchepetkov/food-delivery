@@ -25,7 +25,7 @@
   </head>
 
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container">
         <a href="./index.html" class="header-logo-link"
           ><svg class="header-logo-svg" width="66" height="52">
@@ -85,10 +85,10 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
 
     <main>
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="hero-container">
           <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
           <p class="hero-par">
@@ -114,35 +114,75 @@
             class="hero-img-desk"
           />
         </div>
-      </section>
-
-      <!-- <section>
-        <h2>What's Special About Our Offerings</h2>
-        <p>
-          With our platform, you can browse through a diverse selection of
-          cuisines and local restaurants, and choose from a variety of dishes
-          that cater to your specific taste buds.
-        </p>
-        <ul>
-          <li>
-            <h3>Fasest Delivery</h3>
-            <p>
-              Our advanced logistics system and dedicated delivery partners
-              ensure that your meals are delivered to you within 30-minutes.
-            </p>
-          </li>
-          <li>
-            <h3>Easy To Order</h3>
-            <p>
-              You can browse through a wide variety of cuisines and restaurants,
-              select your favorite meals, and place your order in just a few
-              clicks.
-            </p>
-          </li>
-        </ul>
-        <button type="button">Order Now</button>
-        <img src="./images/aple-min.png" alt="apple" width="396" height="502" />
       </section> -->
+
+      <section class="order">
+        <div class="order-cont">
+          <div class="title-cont">
+            <h2 class="order-title">What's Special About Our Offerings</h2>
+            <p class="order-par">
+              With our platform, you can browse through a diverse selection of
+              cuisines and local restaurants, and choose from a variety of
+              dishes that cater to your specific taste buds.
+            </p>
+          </div>
+          <div class="list-cont">
+            <ul class="order-list">
+              <li class="order-items">
+                <span class="items-span">
+                  <svg class="items-svg" width="28" height="28">
+                    <use href="./images/icons.svg#icon-rocket"></use>
+                  </svg>
+                </span>
+                <h3 class="items-title">Fasest Delivery</h3>
+                <p class="items-par main">
+                  Our advanced logistics system and dedicated delivery partners
+                  ensure that your meals are delivered to you within 30-minutes.
+                </p>
+              </li>
+              <li class="order-items">
+                <span class="items-span">
+                  <svg class="items-svg" width="28" height="28">
+                    <use href="./images/icons.svg#icon-finger"></use>
+                  </svg>
+                </span>
+                <h3 class="items-title">Easy To Order</h3>
+                <p class="items-par">
+                  You can browse through a wide variety of cuisines and
+                  restaurants, select your favorite meals, and place your order
+                  in just a few clicks.
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="btn-cont">
+            <button type="button" class="order-btn">Order Now</button>
+            <a href="" class="order-link"
+              >Read More
+              <svg class="link-svg" width="6" height="10">
+                <use href="./images/icons.svg#icon-pointer"></use>
+              </svg>
+            </a>
+          </div>
+
+          <picture>
+            <source
+              srcset="./images/apple.png 1x, ./images/apple-2x.png 2x"
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcset="./images/apple-tab.png 1x, ./images/apple-tab-2x.png 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="./images/apple-mob.png 1x, ./images/apple-mob-2x.png 2x"
+              media="(max-width: 768px)"
+            />
+            <img src="./images/apple-mob.png" alt="apple" class="order-img" />
+          </picture>
+        </div>
+      </section>
 
       <!-- <section>
         <h2>Some of Our Favorites</h2>
